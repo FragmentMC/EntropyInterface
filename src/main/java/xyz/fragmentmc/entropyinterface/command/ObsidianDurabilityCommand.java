@@ -46,7 +46,7 @@ public class ObsidianDurabilityCommand extends BaseCommand implements Listener, 
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onAssignDurability(AssignDurabilityEvent event) {
-        if (event.getBlock().getType() == Material.OBSIDIAN)
-            event.setDurability(PlotHelper.getPlotIntFlag(ObsidianDurabilityFlag.class, event.getBlock().getLocation()));
+        if (event.getMaterial() == Material.OBSIDIAN)
+            event.setDurability(PlotHelper.getPlotIntFlag(ObsidianDurabilityFlag.class, event.getLocation()));
     }
 }
