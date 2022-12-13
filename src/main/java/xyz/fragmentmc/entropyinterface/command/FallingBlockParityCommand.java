@@ -15,6 +15,6 @@ public class FallingBlockParityCommand extends ToggleCommand implements Listener
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onDetermineFallingBlockExposure(DetermineFallingBlockExposureEvent event) {
-        event.setCancelled(PlotHelper.getPlotBooleanFlag(FallingBlockParityFlag.class, event.getLocation()));
+        event.setCancelled(!PlotHelper.getPlotBooleanFlag(FallingBlockParityFlag.class, event.getLocation()));
     }
 }
