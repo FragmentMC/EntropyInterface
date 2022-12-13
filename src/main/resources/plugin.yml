@@ -1,0 +1,39 @@
+name: EntropyInterface
+version: '${project.version}'
+main: xyz.fragmentmc.entropyinterface.EntropyInterface
+api-version: 1.19
+prefix: [ EntropyInterface ]
+load: STARTUP
+authors: [ jesus_is_hot ]
+description: Plugin to handle entropy jar events for fragment plots.
+website: fragmentmc.xyz
+depend:
+  - PlotSquared
+  - WorldEdit
+commands:
+  tntspread:
+    description: Toggle tnt spread on your plot
+    usage: </command>
+    permission: fragment.tntspread
+  tntflow:
+    description: Toggle tnt waterflow on your plot
+    usage: </command>
+    permission: fragment.tntflow
+  explodelava:
+    description: Toggle explodable lava on your plot
+    usage: </command>
+    permission: fragment.explodelava
+  explodewaterlogged:
+    description: Toggle explodable waterlogged blocks on your plot
+    usage: </command>
+    permission: fragment.explodewaterlogged
+  fallingblockparity:
+    description: Toggle falling block parity on your plot
+    usage: </command>
+    permission: fragment.fallingblockparity
+  obsidiandurability:
+    description: Change the default obsidian durability on your plot
+    usage: </command> <durability>
+    permission: fragment.obsidiandurability
+    aliases:
+      - od
