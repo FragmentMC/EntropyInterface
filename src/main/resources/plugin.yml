@@ -31,6 +31,8 @@ commands:
     description: Toggle falling block parity on your plot
     usage: </command>
     permission: fragment.fallingblockparity
+    aliases:
+      - parity
   obsidiandurability:
     description: Change the default obsidian durability on your plot
     usage: </command> <durability>
